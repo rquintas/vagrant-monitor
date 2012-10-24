@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		
+		<title>Vagrant Machines Monitor</title>
+		
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap/bootstrap.min.js') }}"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap/bootstrap.css') }}"></link>
+
+	</head>
+
+	<body id="index">
+
+		<div id="wrapper" class="container">
+			
+			<h1 id="title">Vagrant Machines</h1>
+			
+			{% block machines %}{% endblock %}	
+			
+		</div>
+			
+	</body>
+
+</html>

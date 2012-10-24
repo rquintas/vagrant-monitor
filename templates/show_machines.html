@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block machines %}
+  {% for entry in entries %}
+	<div id="name" class="well">
+		{{entry.title}}
+		
+		<div id="name" class="pull-right">
+			<p class="label label-warning">{{entry.status}}</p>
+		</div>
+		
+	</div>
+  {% endfor %}
+{% endblock %}
